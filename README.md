@@ -17,7 +17,7 @@
 To integrate TranzzoTokenizer into your Xcode project using [CocoaPods](https://cocoapods.org), add it to your `Podfile`:
 
 ```ruby
-pod 'TranzzoTokenizer'
+pod 'EvoPayTokenizer'
 ```
 
 Then, run the following command:
@@ -25,22 +25,6 @@ Then, run the following command:
 ```bash
 $ pod install
 ```
-
-### Carthage
-
-To integrate TranzzoTokenizer into your Xcode project using [Carthage](https://github.com/Carthage/Carthage), add it to your `Cartfile`:
-
-```
-github "https://github.com/tranzzo/ios-card-tokenizer.git"
-```
-
-Then, run the following command:
-
-```bash
-$ carthage update
-```
-
-Then drag TranzzoTokenizer.framework into your Xcode project.
 
 ## Features
 
@@ -55,7 +39,7 @@ Then drag TranzzoTokenizer.framework into your Xcode project.
 1. Import TranzzoTokenizer framework header
 
     ```swift
-    import TranzzoTokenizer
+    import EvoPayTokenizer
     ```
 
 2. Initialize the tokenizer for an environment you are working with
