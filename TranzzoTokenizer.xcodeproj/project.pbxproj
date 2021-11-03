@@ -49,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C4CC69C72732BE6300E7A88D /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		C4CC69CE2732BE6400E7A88D /* DecryptionGuide.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DecryptionGuide.md; sourceTree = "<group>"; };
 		CE1A775423F55E7200882613 /* URLRequestBuilderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilderTest.swift; sourceTree = "<group>"; };
 		CE1A775623F577F400882613 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE4C74EA2301584E00D46438 /* TranzzoTokenizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TranzzoTokenizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,10 +106,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4CC69CB2732BE6400E7A88D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C750F23015F8800D46438 /* TranzzoTokenizer.swift */,
+				CE621A4A23CF061800EDBC8E /* CardModels */,
+				CE621A4923CF05E500EDBC8E /* Networking */,
+				CE621A4823CF05D100EDBC8E /* Extensions */,
+				CEDEA48D23CE07CE001B1D80 /* CardUtilities */,
+				CE4C74ED2301584E00D46438 /* TranzzoTokenizer.h */,
+				CE621A4D23CF082D00EDBC8E /* Info.plist */,
+				CE1A775623F577F400882613 /* Constants.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		CE4C74E02301584E00D46438 = {
 			isa = PBXGroup;
 			children = (
 				CE4C750423015ADD00D46438 /* README.md */,
+				C4CC69CE2732BE6400E7A88D /* DecryptionGuide.md */,
+				C4CC69C72732BE6300E7A88D /* Package.swift */,
 				CE831AED23CDB30500259A52 /* LICENSE */,
 				CE4C74EC2301584E00D46438 /* TranzzoTokenizer */,
 				CE4C74F72301584E00D46438 /* TranzzoTokenizerTests */,
@@ -127,14 +146,7 @@
 		CE4C74EC2301584E00D46438 /* TranzzoTokenizer */ = {
 			isa = PBXGroup;
 			children = (
-				CE4C750F23015F8800D46438 /* TranzzoTokenizer.swift */,
-				CE621A4A23CF061800EDBC8E /* CardModels */,
-				CE621A4923CF05E500EDBC8E /* Networking */,
-				CE621A4823CF05D100EDBC8E /* Extensions */,
-				CEDEA48D23CE07CE001B1D80 /* CardUtilities */,
-				CE4C74ED2301584E00D46438 /* TranzzoTokenizer.h */,
-				CE621A4D23CF082D00EDBC8E /* Info.plist */,
-				CE1A775623F577F400882613 /* Constants.swift */,
+				C4CC69CB2732BE6400E7A88D /* Sources */,
 			);
 			path = TranzzoTokenizer;
 			sourceTree = "<group>";
@@ -257,7 +269,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = Tranzzo;
 				TargetAttributes = {
 					CE4C74E92301584E00D46438 = {
@@ -385,6 +397,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -411,10 +424,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -451,6 +464,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -471,7 +485,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -498,9 +512,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TranzzoTokenizer/Info.plist;
+				INFOPLIST_FILE = TranzzoTokenizer/Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -532,9 +546,9 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_TESTABILITY = NO;
-				INFOPLIST_FILE = TranzzoTokenizer/Info.plist;
+				INFOPLIST_FILE = TranzzoTokenizer/Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
