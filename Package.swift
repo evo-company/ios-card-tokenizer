@@ -8,7 +8,7 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "EvoPayTokenizer",
+            name: "TranzzoTokenizer",
             targets: ["TranzzoTokenizer"]),
     ],
     dependencies: [
@@ -23,6 +23,6 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "TranzzoTokenizerTests",
-            dependencies: ["TranzzoTokenizerTests"]),
+            dependencies: ["TranzzoTokenizer"]),
     ]
 )

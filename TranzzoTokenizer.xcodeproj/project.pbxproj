@@ -109,16 +109,17 @@
 		C4CC69CB2732BE6400E7A88D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				CE4C750F23015F8800D46438 /* TranzzoTokenizer.swift */,
-				CE621A4A23CF061800EDBC8E /* CardModels */,
-				CE621A4923CF05E500EDBC8E /* Networking */,
-				CE621A4823CF05D100EDBC8E /* Extensions */,
-				CEDEA48D23CE07CE001B1D80 /* CardUtilities */,
-				CE4C74ED2301584E00D46438 /* TranzzoTokenizer.h */,
-				CE621A4D23CF082D00EDBC8E /* Info.plist */,
-				CE1A775623F577F400882613 /* Constants.swift */,
+				CE4C74EC2301584E00D46438 /* TranzzoTokenizer */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		C4CC69CF2732C83200E7A88D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C74F72301584E00D46438 /* TranzzoTokenizerTests */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		CE4C74E02301584E00D46438 = {
@@ -128,8 +129,8 @@
 				C4CC69CE2732BE6400E7A88D /* DecryptionGuide.md */,
 				C4CC69C72732BE6300E7A88D /* Package.swift */,
 				CE831AED23CDB30500259A52 /* LICENSE */,
-				CE4C74EC2301584E00D46438 /* TranzzoTokenizer */,
-				CE4C74F72301584E00D46438 /* TranzzoTokenizerTests */,
+				C4CC69CB2732BE6400E7A88D /* Sources */,
+				C4CC69CF2732C83200E7A88D /* Tests */,
 				CE4C74EB2301584E00D46438 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -146,7 +147,14 @@
 		CE4C74EC2301584E00D46438 /* TranzzoTokenizer */ = {
 			isa = PBXGroup;
 			children = (
-				C4CC69CB2732BE6400E7A88D /* Sources */,
+				CE4C750F23015F8800D46438 /* TranzzoTokenizer.swift */,
+				CE621A4A23CF061800EDBC8E /* CardModels */,
+				CE621A4923CF05E500EDBC8E /* Networking */,
+				CE621A4823CF05D100EDBC8E /* Extensions */,
+				CEDEA48D23CE07CE001B1D80 /* CardUtilities */,
+				CE4C74ED2301584E00D46438 /* TranzzoTokenizer.h */,
+				CE621A4D23CF082D00EDBC8E /* Info.plist */,
+				CE1A775623F577F400882613 /* Constants.swift */,
 			);
 			path = TranzzoTokenizer;
 			sourceTree = "<group>";
