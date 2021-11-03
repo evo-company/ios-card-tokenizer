@@ -23,6 +23,6 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "TranzzoTokenizerTests",
-            dependencies: ["./TranzzoTokenizerTests"]),
+            dependencies: ["TranzzoTokenizerTests"]),
     ]
 )
