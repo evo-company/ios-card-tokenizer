@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CE4C74E92301584E00D46438"
                BuildableName = "TranzzoTokenizer.framework"
-               BlueprintName = "TranzzoTokenizer"
+               BlueprintName = "EvoPayTokenizer"
                ReferencedContainer = "container:TranzzoTokenizer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,7 +33,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE4C74E92301584E00D46438"
             BuildableName = "TranzzoTokenizer.framework"
-            BlueprintName = "TranzzoTokenizer"
+            BlueprintName = "EvoPayTokenizer"
             ReferencedContainer = "container:TranzzoTokenizer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,7 +65,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE4C74E92301584E00D46438"
             BuildableName = "TranzzoTokenizer.framework"
-            BlueprintName = "TranzzoTokenizer"
+            BlueprintName = "EvoPayTokenizer"
             ReferencedContainer = "container:TranzzoTokenizer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -81,7 +81,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE4C74E92301584E00D46438"
             BuildableName = "TranzzoTokenizer.framework"
-            BlueprintName = "TranzzoTokenizer"
+            BlueprintName = "EvoPayTokenizer"
             ReferencedContainer = "container:TranzzoTokenizer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'TranzzoTokenizer/Sources/**/*.{h,m,swift}'
+  s.source_files = 'Sources/TranzzoTokenizer/**/*.{h,m,swift}'
   s.swift_versions = ['5.0', '5.1']
 end

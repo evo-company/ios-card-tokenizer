@@ -234,9 +234,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CE4C74E92301584E00D46438 /* TranzzoTokenizer */ = {
+		CE4C74E92301584E00D46438 /* EvoPayTokenizer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE4C74FE2301584E00D46438 /* Build configuration list for PBXNativeTarget "TranzzoTokenizer" */;
+			buildConfigurationList = CE4C74FE2301584E00D46438 /* Build configuration list for PBXNativeTarget "EvoPayTokenizer" */;
 			buildPhases = (
 				CE4C74E52301584E00D46438 /* Headers */,
 				CE4C74E62301584E00D46438 /* Sources */,
@@ -247,7 +247,7 @@
 			);
 			dependencies = (
 			);
-			name = TranzzoTokenizer;
+			name = EvoPayTokenizer;
 			productName = "widget-light-sdk";
 			productReference = CE4C74EA2301584E00D46438 /* TranzzoTokenizer.framework */;
 			productType = "com.apple.product-type.framework";
@@ -303,7 +303,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE4C74E92301584E00D46438 /* TranzzoTokenizer */,
+				CE4C74E92301584E00D46438 /* EvoPayTokenizer */,
 				CE4C74F22301584E00D46438 /* TranzzoTokenizerTests */,
 			);
 		};
@@ -373,7 +373,7 @@
 /* Begin PBXTargetDependency section */
 		CE4C74F62301584E00D46438 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CE4C74E92301584E00D46438 /* TranzzoTokenizer */;
+			target = CE4C74E92301584E00D46438 /* EvoPayTokenizer */;
 			targetProxy = CE4C74F52301584E00D46438 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -625,7 +625,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE4C74FE2301584E00D46438 /* Build configuration list for PBXNativeTarget "TranzzoTokenizer" */ = {
+		CE4C74FE2301584E00D46438 /* Build configuration list for PBXNativeTarget "EvoPayTokenizer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE4C74FF2301584E00D46438 /* Debug */,
