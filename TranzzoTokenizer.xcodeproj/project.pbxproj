@@ -109,7 +109,7 @@
 		C4CC69CB2732BE6400E7A88D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				CE4C74EC2301584E00D46438 /* TranzzoTokenizer */,
+				CE4C74EC2301584E00D46438 /* EvoPayTokenizer */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -144,7 +144,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CE4C74EC2301584E00D46438 /* TranzzoTokenizer */ = {
+		CE4C74EC2301584E00D46438 /* EvoPayTokenizer */ = {
 			isa = PBXGroup;
 			children = (
 				CE4C750F23015F8800D46438 /* TranzzoTokenizer.swift */,
@@ -156,7 +156,7 @@
 				CE621A4D23CF082D00EDBC8E /* Info.plist */,
 				CE1A775623F577F400882613 /* Constants.swift */,
 			);
-			path = TranzzoTokenizer;
+			path = EvoPayTokenizer;
 			sourceTree = "<group>";
 		};
 		CE4C74F72301584E00D46438 /* TranzzoTokenizerTests */ = {
