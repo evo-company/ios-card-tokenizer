@@ -30,7 +30,7 @@ public enum Environment: String {
     }
     
     private var domain: String {
-        return "evopay.com.ua"
+        return "rozetkapay.com.ua"
     }
     
     private var groupPath: String {
