@@ -30,7 +30,12 @@ public enum Environment: String {
     }
     
     private var domain: String {
-        return "rozetkapay.com"
+        switch self {
+        case .prod:
+            return "rozetkapay.com"
+        case .stage:
+            return "tranzzo.com"
+        }
     }
     
     private var groupPath: String {
