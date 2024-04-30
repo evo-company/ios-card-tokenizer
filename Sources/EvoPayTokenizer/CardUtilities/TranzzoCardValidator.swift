@@ -102,7 +102,15 @@ public class TranzzoCardValidator {
     /// - parameter expirationYear:           Expiration year for a card.
     /// - Returns: `true` if specified values are valid, `false` otherwise.
     public func isValid(expirationDate: CardExpirationDate) -> Bool {
-        let currentDate = Date()
+        /// Original code:
+        // let currentDate = Date()
+        /// Temp solution for prolongated cards:
+        var components = DateComponents()
+        components.year = 2020
+        components.month = 1
+        components.day = 1
+        let currentDate = calendar.date(from: components) ?? Date()
+        ///
         let year = calendar.component(.year, from: currentDate)
         let month = calendar.component(.month, from: currentDate)
         if expirationDate.year == year || String(describing: year).hasSuffix(String(describing: expirationDate.year)) {
