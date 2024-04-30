@@ -114,6 +114,25 @@ public class TranzzoCardValidator {
         }
     }
     
+    /// Determines, if the expiration date values are valid with ablility to validate extended cards from 2020.01.01
+    public func isValidWithExtended(expirationDate: CardExpirationDate) -> Bool {
+        var components = DateComponents()
+        components.year = 2020
+        components.month = 1
+        components.day = 1
+        let currentDate = calendar.date(from: components) ?? Date()
+        
+        let year = calendar.component(.year, from: currentDate)
+        let month = calendar.component(.month, from: currentDate)
+        if expirationDate.year == year || String(describing: year).hasSuffix(String(describing: expirationDate.year)) {
+            return expirationDate.month >= month && expirationDate.month > 0 && expirationDate.month <= 12
+        } else {
+            let trimmedTargetYear = expirationDate.year % 100
+            let trimmedCurrentYear = year % 100
+            return trimmedTargetYear > trimmedCurrentYear && expirationDate.month > 0 && expirationDate.month <= 12
+        }
+    }
+    
     // MARK: - Private Properties
     private func luhnCheck(cardNumber: String) -> Bool {
         var sum = 0
