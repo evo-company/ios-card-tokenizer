@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'EvoPayTokenizer'
-  s.version          = '1.1.7'
+  s.version          = '1.1.9'
   s.summary          = 'EvoPayTokenizer helps you get a token for a bank card through evopay Payment Provider.'
   s.description      = "EvoPayTokenizer provides a simple interface to get a token for a payment card, that your users specify. This token will further be used when working with other evopay services."
 
